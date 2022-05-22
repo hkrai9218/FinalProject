@@ -1,13 +1,13 @@
 let gameState = 'title';
 let canvas;
-let bgR = 120
-let bgG = 110
-let bgB = 230
+let bgR = 110
+let bgG = 240
+let bgB = 100
 
 function setup() {
   createCanvas(400, 400);
   canvas.parent('sketch-holder');
-  frameRate(70);
+  frameRate(60);
 }
 
 function draw() {
@@ -17,7 +17,7 @@ function draw() {
     case 'title':
       titleScreen();
       break;
-    case 'page1':
+    case 'lvl1':
       gameStage1();
       break;
     case 'gameover':
@@ -28,12 +28,12 @@ function draw() {
 function keyReleased() {
   if (gameState === 'title' || gameState === 'gameover') {
     if (key === 's' || key === 'S') {
-      gameState = 'page1';
+      gameState = 'lvl1';
       bgR = 100;
       bgG = 240;
       bgB = 100;
     }
-    else if (gameState === 'page1') {
+    else if (gameState === 'lvl1') {
       if (key === 's' || key === 'S') {
         bgR = random(255);
         bgG = random(255);
