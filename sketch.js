@@ -20,15 +20,6 @@ function draw() {
     case 'page1':
       gameStage1();
       break;
-    case 'page2':
-      gameStage2();
-      break;
-    case 'page3':
-      gameStage3();
-      break;
-    case 'page4':
-      gameStage4();
-      break;
     case 'gameover':
       gameOver();
       break;
