@@ -93,7 +93,7 @@ function titleScreen() {
   fill(255);
   textSize(75);
   textAlign(CENTER);
-  text('The Title', width*0.5, height*0.33);
+  text('GAY', width*0.5, height*0.33);
   textSize(25);
   text('Press "S" To Start Game', width*0.5, height*0.66);
 }
@@ -105,7 +105,7 @@ function gameStage1() {
   fill(0);
   textSize(50);
   textAlign(CENTER);
-  text('Avoid the circle!', width*0.5, height*0.1);
+  text('CIRCLE!', width*0.5, height*0.1);
   textSize(20);
   text('Press "S" to change background color.', width*0.5, height*0.95);
   ellipseMode(CENTER);
@@ -130,7 +130,7 @@ function gameOver() {
   fill(255);
   textSize(75);
   textAlign(CENTER);
-  text('GAME OVER', width*0.5, height*0.33);
+  text('OOP', width*0.5, height*0.33);
   textSize(25);
   text('Press "S" To Restart Game', width*0.5, height*0.66);
 }
