@@ -68,15 +68,18 @@ function keyReleased() {
 
 function titleScreen() {
   background(233, 208, 223);
+  fill(240, 210, 230);
+  rect(width*0, height*0, width*99, height*0.05);
+  rect(width*0, height*0.85, width*99, height*0.99);
   stroke(255);
   fill(255);
   textSize(50);
   textAlign(CENTER);
-  text('Bay Area', width*0.5, height*0.33);
-  text('and the usage', width*0.5, height*0.5);
-  text('of phones', width*0.5, height*0.65);
+  text('The Bay Area', width*0.5, height*0.2);
+  text('and the usage', width*0.5, height*0.3);
+  text('of phones', width*0.5, height*0.4);
   textSize(25);
-  text('To continue press "W"', width*0.5, height*0.95);
+  text('To begin, press "W"', width*0.5, height*0.95);
 }
 
 function gameStage1() {
@@ -95,7 +98,9 @@ function gameStage2() {
   fill(0);
   textSize(20);
   text('The time between the first iPhone and now.', width*0.5, height*0.8);
+  textSize(150);
   text(frameCount, width / 2, height / 2);
+  textSize(20);
   text('To continue press "W"', width*0.5, height*0.95);
 }
 
