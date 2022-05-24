@@ -209,6 +209,7 @@ function gameState4() {
   text('There are currently 6.5 billion Smartphone', width*0.5, height*0.5);
   text('Subscriptions in the World. There are also more than', width*0.5, height*0.6);
   text('290 Million Smartphone Users in the United States.', width*0.5, height*0.7);
+  text('Click to reveal', width*0.5, height*0.9);
   text('To restart press "W"', width*0.5, height*0.95);
 }
 
