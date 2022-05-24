@@ -52,12 +52,16 @@ function draw() {
       fill(value);
       rect(245, 115, 45, 50);
       rect(280, 70, 45, 40);
-      rect(178, 170, 40, 50);
+      rect(178, 170, 45, 50);
+      rect(285, 215, 90, 50);
+      rect(70, 320, 100, 50);
       fill(255);
       noStroke();
       text('80%', 198, 200);
       text('35%', 303, 100);
       text('one', 267, 150);
+      text('6.5 billion', 330, 250);
+      text('290 Million', 120, 350);
       break;
   }
 }
@@ -202,6 +206,9 @@ function gameState4() {
   text('In the Bay Area, a 35% amount of people', width*0.5, height*0.2)
   text('have more than one Phone on their person.', width*0.5, height*0.3);
   text('About 80% of people own a smartphone.', width*0.5, height*0.4);
+  text('There are currently 6.5 billion Smartphone', width*0.5, height*0.5);
+  text('Subscriptions in the World. There are also more than', width*0.5, height*0.6);
+  text('290 Million Smartphone Users in the United States.', width*0.5, height*0.7);
   text('To restart press "W"', width*0.5, height*0.95);
 }
 
