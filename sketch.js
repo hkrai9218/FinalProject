@@ -4,6 +4,7 @@ let bgR = 233;
 let bgG = 208;
 let bgB = 223;
 let circles = [];
+let value = 0;
 
 // Set up
 function setup() {
@@ -48,6 +49,8 @@ function draw() {
       break;
     case 'lvl4':
       gameState4();
+      fill(value);
+      rect(275, 115, 40, 50);
       break;
   }
 }
@@ -106,6 +109,19 @@ function titleScreen() {
 
 function gameStage1() {
   background(bgR, bgG, bgB);
+  noStroke();
+  fill(100);
+  rect(width*0.5, height*0.5, width*0.42, height*0.7);
+  noStroke();
+  fill(240);
+  rect(width*0.52, height*0.52, width*0.385, height*0.5);
+  noStroke();
+  fill(160, 240, 136);
+  rect(width*0.55, height*0.55, width*0.25, height*0.1, 20);
+  describe('round edges in mid-right of canvas');
+  noStroke();
+  fill(100);
+  rect(width*0.67, height*0.7, width*0.2, height*0.1, 20);
   fill(210, 180, 200);
   noStroke();
   rect(width*0.0, height*0.0, width*0.05, height*0.99);
@@ -136,7 +152,7 @@ function gameStage2() {
   text('How many phones do you think were bought.', width*0.5, height*0.8);
   text('after 2008?', width*0.5, height*0.85);
   textSize(150);
-  text(frameCount, width / 2, height / 2);
+  text(frameCount, width / 3.5, height / 3.5);
   textSize(20);
   text('To continue press "W"', width*0.5, height*0.95);
 }
@@ -169,9 +185,10 @@ function gameState4() {
   stroke(0);
   fill(0);
   textSize(20);
-  text('The numbers continue to increase.', width*0.5, height*0.2);
-  text('In the Bay Area, an X amount of people', width*0.5, height*0.3)
-  text('have more than one Phone on their person.', width*0.5, height*0.4);
+  text('The numbers continue to increase.', width*0.5, height*0.1);
+  text('In the Bay Area, an X amount of people', width*0.5, height*0.2)
+  text('have more than one Phone on their person.', width*0.5, height*0.3);
+  text('About 80% of people own a smartphone.', width*0.5, height*0.4);
   text('To restart press "W"', width*0.5, height*0.95);
 }
 
@@ -198,5 +215,13 @@ class Circle {
   display() {
     fill(frameCount, bgG, bgB);
     circle(this.x, this.y, 20);
+  }
+}
+
+function mouseClicked() {
+  if (value === 0) {
+    value = 255;
+  } else {
+    value = 0;
   }
 }
