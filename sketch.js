@@ -3,12 +3,17 @@ let canvas;
 let bgR = 233;
 let bgG = 208;
 let bgB = 223;
+let circles = [];
 
 // Set up
 function setup() {
   canvas = createCanvas(600, 500);
   canvas.parent('sketch-holder');
   frameRate(60);
+
+  for(let i = 0; i < 10; i++) {
+    circles[i] = new Circle(random(width), random(height), random(-4, 4), random(-4, 4));
+  }
 }
 
 function draw() {
@@ -36,6 +41,10 @@ function draw() {
       break;
     case 'lvl3':
       gameState3();
+          for(let i = 0; i < circles.length; i++) {
+    circles[i].move();
+    circles[i].display();
+  }
       break;
     case 'lvl4':
       gameState4();
@@ -164,4 +173,30 @@ function gameState4() {
   text('In the Bay Area, an X amount of people', width*0.5, height*0.3)
   text('have more than one Phone on their person.', width*0.5, height*0.4);
   text('To restart press "W"', width*0.5, height*0.95);
+}
+
+class Circle {
+  constructor(x, y, xSpeed, ySpeed) {
+    this.x = x;
+    this.y = y;
+    this.xSpeed = xSpeed;
+    this.ySpeed = ySpeed;
+  }
+
+  move() {
+    this.x += this.xSpeed;
+    if (this.x < 0 || this.x > width) {
+      this.xSpeed *= -1;
+    }
+
+    this.y += this.ySpeed;
+    if (this.y < 0 || this.y > height) {
+      this.ySpeed *= -1;
+    }
+  }
+
+  display() {
+    fill(frameCount, bgG, bgB);
+    circle(this.x, this.y, 20);
+  }
 }
