@@ -169,7 +169,7 @@ function gameStage2() {
   text('How many phones do you think were bought.', width*0.5, height*0.8);
   text('after 2008?', width*0.5, height*0.85);
   textSize(150);
-  text(frameCount, width / 3.5, height / 3.5);
+  text(frameCount, width / 2, height / 2);
   textSize(20);
   text('To continue press "W"', width*0.5, height*0.95);
 }
