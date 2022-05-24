@@ -17,6 +17,16 @@ function draw() {
 
     case 'title':
       titleScreen();
+      angleMode(DEGREES);
+      let a = atan2(mouseY - height / 2, mouseX - width / 2);
+      translate(width / 2, height / 1.6);
+      push();
+      rotate(a);
+      rect(width*-0.1, height*-0.06, width*0.1667, height*0.14);
+      fill(100);
+      rect(width*-0.083, height*-0.05, width*0.125, height*0.12);
+      circle(width*0.055, height*0.01, width*0.0166);
+      pop();
       break;
     case 'lvl1':
       gameStage1();
@@ -150,8 +160,8 @@ function gameState4() {
   stroke(0);
   fill(0);
   textSize(20);
-  text('The numbers continue to increase.', width*0.5, height*0.3);
-  text('In the Bay Area, an X amount of people', width*0.5, height*0.5)
-  text('have more than one Phone on their person.', width*0.5, height*0.7);
+  text('The numbers continue to increase.', width*0.5, height*0.2);
+  text('In the Bay Area, an X amount of people', width*0.5, height*0.3)
+  text('have more than one Phone on their person.', width*0.5, height*0.4);
   text('To restart press "W"', width*0.5, height*0.95);
 }
