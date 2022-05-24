@@ -50,7 +50,14 @@ function draw() {
     case 'lvl4':
       gameState4();
       fill(value);
-      rect(275, 115, 40, 50);
+      rect(245, 115, 45, 50);
+      rect(280, 70, 45, 40);
+      rect(178, 170, 40, 50);
+      fill(255);
+      noStroke();
+      text('80%', 198, 200);
+      text('35%', 303, 100);
+      text('one', 267, 150);
       break;
   }
 }
@@ -128,13 +135,19 @@ function gameStage1() {
   rect(width*0.95, height*0.0, width*0.99, height*0.99);
   rect(width*0, height*0, width*99, height*0.05);
   rect(width*0, height*0.85, width*99, height*0.99);
-  stroke(0);
-  fill(0);
+  strokeWeight(2);
+  stroke(20);
+  fill(255);
   textSize(20);
   textAlign(CENTER);
   text('The first iPhone was in development in 2007', width*0.5, height*0.1);
-  text('Fun Fact: Apple faced two lawsuits', width*0.5, height*0.15);
-  text('regarding selling iPhones.', width*0.5, height*0.2);
+  text('The estimated sales of between 250,000', width*0.5, height*0.17);
+  text('and 700,000 iPhones in the first weekend alone', width*0.5, height*0.25);
+  text('By the end of 2009,', width*0.5, height*0.32);
+  text('iPhone models had been released in all major markets', width*0.5, height*0.4);
+  text('Fun Fact:', width*0.27, height*0.6);
+  text('Apple faced two lawsuits', width*0.27, height*0.66);
+  text('regarding selling iPhones.', width*0.27, height*0.72);
   text('To continue press "W"', width*0.5, height*0.95);
 }
 
@@ -147,7 +160,7 @@ function gameStage2() {
   rect(width*0, height*0, width*99, height*0.05);
   rect(width*0, height*0.9, width*99, height*0.99);
   stroke(0);
-  fill(0);
+  fill(255);
   textSize(20);
   text('How many phones do you think were bought.', width*0.5, height*0.8);
   text('after 2008?', width*0.5, height*0.85);
@@ -166,7 +179,7 @@ function gameState3() {
   rect(width*0, height*0, width*99, height*0.05);
   rect(width*0, height*0.85, width*99, height*0.99);
   stroke(0);
-  fill(0);
+  fill(255);
   textSize(20);
   text('The amount of phones purchased each year staggers.', width*0.5, height*0.4);
   text('There is an x amount of', width*0.5, height*0.5);
@@ -183,10 +196,10 @@ function gameState4() {
   rect(width*0, height*0, width*99, height*0.05);
   rect(width*0, height*0.85, width*99, height*0.99);
   stroke(0);
-  fill(0);
+  fill(255);
   textSize(20);
   text('The numbers continue to increase.', width*0.5, height*0.1);
-  text('In the Bay Area, an X amount of people', width*0.5, height*0.2)
+  text('In the Bay Area, a 35% amount of people', width*0.5, height*0.2)
   text('have more than one Phone on their person.', width*0.5, height*0.3);
   text('About 80% of people own a smartphone.', width*0.5, height*0.4);
   text('To restart press "W"', width*0.5, height*0.95);
