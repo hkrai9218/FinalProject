@@ -55,8 +55,8 @@ function draw() {
       rect(178, 170, 45, 50);
       rect(285, 215, 90, 50);
       rect(70, 320, 100, 50);
-      fill(0);
       noStroke();
+      fill(0);
       text('80%', 198, 200);
       text('35%', 303, 100);
       text('one', 267, 150);
