@@ -4,6 +4,12 @@ html, body {
   background-color:rgb(249, 231, 239);
 }
 
+canvas {
+  display: block;
+  margin:auto;
+  border-radius: 20px
+}
+
 .Repository{
   position: relative;
   text-align: center;
@@ -23,12 +29,6 @@ html, body {
   text-align: center;
   padding: 0;
   margin: auto;
-}
-
-canvas {
-  display: block;
-  margin:auto;
-  border-radius: 20px
 }
 
 #p5sketch {
