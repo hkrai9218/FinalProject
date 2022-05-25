@@ -5,7 +5,7 @@ html, body {
 }
 canvas {
   display: block;
-  margin:center;
+  margin:auto;
 }
 
 #p5sketch {
