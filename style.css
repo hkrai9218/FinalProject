@@ -7,21 +7,21 @@ html, body {
 .Repository{
   position: relative;
   text-align: center;
-  padding: 6rem;
+  padding: 0;
   margin: auto;
 }
 
 .artistStatement{
   position: relative;
   text-align: center;
-  padding: 2rem;
+  padding: 0;
   margin: auto;
 }
 
 .Resources{
   position: relative;
   text-align: center;
-  padding: 6rem;
+  padding: 0;
   margin: auto;
 }
 
