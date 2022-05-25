@@ -186,8 +186,8 @@ function gameState3() {
   fill(255);
   textSize(20);
   text('The amount of phones purchased each year staggers.', width*0.5, height*0.4);
-  text('There is an x amount of', width*0.5, height*0.5);
-  text('phones being purchased every two minutes.', width*0.5, height*0.6);
+  text('About more than 4.14 million phones', width*0.5, height*0.5);
+  text('are being purchased every day in the world.', width*0.5, height*0.6);
   text('To continue press "W"', width*0.5, height*0.95);
 }
 
