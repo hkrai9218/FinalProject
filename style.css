@@ -9,6 +9,14 @@ canvas {
   border-radius: 20px
 }
 
+#p5sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 .Repository{
   position: relative;
   text-align: center;
@@ -21,12 +29,4 @@ canvas {
   text-align: center;
   padding: 2rem;
   margin: auto;
-}
-
-#p5sketch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
 }
