@@ -18,6 +18,13 @@ html, body {
   margin: auto;
 }
 
+.Resources{
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
+
 canvas {
   display: block;
   margin:auto;
