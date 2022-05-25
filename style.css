@@ -20,6 +20,7 @@ canvas {
 
 .Repository{
   position: relative;
+  font: Arial;
   text-align: center; bottom:
   padding: 0;
   margin: auto;
@@ -27,6 +28,7 @@ canvas {
 
 .artistStatement{
   position: relative;
+  font: Arial;
   text-align: center; bottom:
   padding: 0;
   margin: auto;
@@ -34,7 +36,8 @@ canvas {
 
 .Resources{
   position: relative;
-  text-align: center; bottom: 
+  font: Arial;
+  text-align: center; bottom:
   padding: 0;
   margin: auto;
 }
