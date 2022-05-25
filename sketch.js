@@ -192,8 +192,8 @@ function gameState3() {
 }
 
 function gameState4() {
-  background(240, 250, 200);
-  fill(210, 220, 150);
+  background(200, 100, 150);
+  fill(195, 155, 170);
   noStroke();
   rect(width*0.0, height*0.0, width*0.05, height*0.99);
   rect(width*0.95, height*0.0, width*0.99, height*0.99);
