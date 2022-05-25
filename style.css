@@ -1,11 +1,19 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: 249, 231, 239;
+  background-color:rgb(249, 231, 239);
 }
 canvas {
   display: block;
   margin:auto;
+  border-radius: 20px
+}
+
+.Repository{
+  position: relative;
+  text-align: center;
+  padding: 4rem;
+  margin: auto;
 }
 
 #p5sketch {
