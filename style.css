@@ -16,6 +16,13 @@ canvas {
   margin: auto;
 }
 
+.artistStatement{
+  position: relative;
+  text-align: center;
+  padding: 4rem;
+  margin: auto;
+}
+
 #p5sketch {
   display: flex;
   justify-content: center;
