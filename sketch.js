@@ -116,7 +116,7 @@ function titleScreen() {
   text('of phones', width*0.5, height*0.4);
   textSize(25);
   text('To begin, press "W"', width*0.5, height*0.95);
-  text('Harleen Rai', width*0.05, height*0.95);
+  text('Harleen Rai', width*0.15, height*0.95);
 }
 
 function gameStage1() {
